@@ -1,0 +1,30 @@
+body {
+  background-color: #202229;
+  color:white;
+  font-family: monospace;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+
+.text {
+    padding: 1%;
+    width: 1000px;
+    height: 20px;
+    background-color: #2f3136;
+    border: 1px solid #040405;
+    border-radius: 3px;
+    color: #f6f6f7;
+    width: 100%;
+    outline:none;
+}
+
+.button {
+  width:120px;
+  height:50px;
+  color:white;
+  border-radius: 2px;
+  border: 1px solid #43b581;
+  background-color: #43b581;
+  outline: none;
+}
