@@ -14,6 +14,7 @@ const createWindow = () => {
     frame:false,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
     }
   });
 
@@ -36,7 +37,7 @@ app.on('activate', () => {
 
 ipcMain.on('kaydet', function (e, bilgiler) {
 
-  if (isNaN(bilgiler.clientid)) {
+  if (!isNaN(bilgiler.clientid)) {
     return;
   }
 
