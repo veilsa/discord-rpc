@@ -2,13 +2,18 @@
 
 Veilsa tarafından hazırlanan, kullanımı basit discord rich presence uygulamasıdır.
 
+## V1.1.0'da neler değişti
+
+1. Çerçeve kaldırıldı
+
+2. Font değiştirildi
+
 ## Kurulum
 
 Kurulum yapabilmek için öncelikle bilgisayarınızda `node.js` kurulu olmalıdır. Ondan sonraki adımlar ise şöyledir:
 
 1. Gerekli modülleri kurun,
-`npm i electron`
-`npm i discord-rpc`
+`npm install`
 
 2. Konsola `npm start` yazarak çalıştırın ,
 

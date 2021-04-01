@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202229;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #202229;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #202229;
+}
+
 body {
   background-color: #202229;
   color:white;
-  font-family: monospace;
+  font-family: sans-serif;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;

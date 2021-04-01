@@ -1,29 +1,23 @@
-const { app, BrowserWindow, ipcMain, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
 
 var rpc = require("discord-rpc");
 const client = new rpc.Client({ transport: 'ipc' });
-
-Menu.setApplicationMenu(false)
 if (require('electron-squirrel-startup')) { 
   app.quit();
 }
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 500,
-    height: 500,
-    icon: `${__dirname}/img/logo.png`,
+    width: 1000,
+    height: 1000,
+    frame:false,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false,
-      devTools: false,
     }
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
-
-  mainWindow.webContents.openDevTools();
 };
 
 app.on('ready', createWindow);
