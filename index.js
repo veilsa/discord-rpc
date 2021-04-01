@@ -37,7 +37,7 @@ app.on('activate', () => {
 
 ipcMain.on('kaydet', function (e, bilgiler) {
 
-  if (!isNaN(bilgiler.clientid)) {
+  if (isNaN(bilgiler.clientid)) {
     return;
   }
 
