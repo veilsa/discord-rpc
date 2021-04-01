@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain} = require('electron');
+const { app, BrowserWindow, ipcMain, Menu } = require('electron');
 const path = require('path');
 
 var rpc = require("discord-rpc");
@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1000,
     height: 1000,
-    frame:false,
+    title: "Veilsa RPC",
     icon:`${__dirname}/img/logo.png`,
     webPreferences: {
       nodeIntegration: true,
@@ -22,7 +22,13 @@ const createWindow = () => {
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 };
 
-app.on('ready', createWindow);
+const mainMenuTemplate = [];
+
+app.on('ready', () => {
+  createWindow()
+  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+  Menu.setApplicationMenu(mainMenu);
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
