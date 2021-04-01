@@ -12,6 +12,7 @@ const createWindow = () => {
     width: 1000,
     height: 1000,
     frame:false,
+    icon:`${__dirname}/img/logo.png`,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
