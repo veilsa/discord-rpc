@@ -2,12 +2,6 @@
 
 Veilsa tarafından hazırlanan, kullanımı basit discord rich presence uygulamasıdır.
 
-## V1.1.0'da neler değişti
-
-1. Çerçeve kaldırıldı
-
-2. Font değiştirildi
-
 ## Kurulum
 
 Kurulum yapabilmek için öncelikle bilgisayarınızda `node.js` kurulu olmalıdır. Ondan sonraki adımlar ise şöyledir:
